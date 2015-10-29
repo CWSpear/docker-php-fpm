@@ -22,6 +22,13 @@ RUN apt-get update -y && \
     php5-xdebug \
     php5-xmlrpc \
     php5-xcache
+    optipng \
+    pngquant \
+    pngcrush \
+    jpegoptim \
+    libjpeg-progs \
+    gifsicle && \
+apt-get autoremove -y
 
 # Configure PHP-FPM
 RUN sed -i "s/;date.timezone =.*/date.timezone = UTC/" /etc/php5/fpm/php.ini && \
