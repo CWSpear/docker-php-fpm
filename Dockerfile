@@ -21,7 +21,7 @@ RUN apt-get update -y && \
     php5-sqlite \
     php5-xdebug \
     php5-xmlrpc \
-    php5-xcache
+    php5-xcache \
     optipng \
     pngquant \
     pngcrush \
